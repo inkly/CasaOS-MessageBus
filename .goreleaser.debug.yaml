@@ -177,7 +177,7 @@ changelog:
       - "^test:"
 release:
   github:
-    owner: IceWhaleTech
+    owner: inkly
     name: CasaOS-MessageBus
   draft: true
   prerelease: auto
