@@ -19,6 +19,23 @@ import (
 	echo_middleware "github.com/labstack/echo/v4/middleware"
 )
 
+// eventPublishPrefix is the route casaos POSTs casaos:system:utilization to
+// every 5s (route/periodical.go). Those loopback publishes are dropped from
+// the access log (issue #2211); everything else stays logged.
+const eventPublishPrefix = "/v2/message_bus/event/"
+
+// fromHost reports whether the request came from this machine: the unix
+// socket (app-management) or a loopback TCP peer (casaos, local-storage).
+func fromHost(realIP, host string) bool {
+	return host == "unix" || realIP == "::1" || realIP == "127.0.0.1"
+}
+
+// skipAccessLog reports whether the access-log line is dropped for a request.
+// GET is the websocket subscribe and stays logged.
+func skipAccessLog(method, path, realIP, host string) bool {
+	return method == http.MethodPost && strings.HasPrefix(path, eventPublishPrefix) && fromHost(realIP, host)
+}
+
 func NewAPIRouter(swagger *openapi3.T, services *service.Services) (http.Handler, error) {
 	apiRoute := NewAPIRoute(services)
 
@@ -35,16 +52,17 @@ func NewAPIRouter(swagger *openapi3.T, services *service.Services) (http.Handler
 
 	e.Use(echo_middleware.Gzip())
 	e.Use(echo_middleware.Recover())
-	e.Use(echo_middleware.Logger())
+	e.Use(echo_middleware.LoggerWithConfig(echo_middleware.LoggerConfig{
+		Skipper: func(c echo.Context) bool {
+			r := c.Request()
+			return skipAccessLog(r.Method, r.URL.Path, c.RealIP(), r.Host)
+		},
+	}))
 
 	e.Use(echo_middleware.JWTWithConfig(echo_middleware.JWTConfig{
 		Skipper: func(c echo.Context) bool {
-			// skip when source is unix socket
-			if c.Request().Host == "unix" {
-				return true
-			}
-
-			if c.RealIP() == "::1" || c.RealIP() == "127.0.0.1" {
+			// skip when source is unix socket or loopback
+			if fromHost(c.RealIP(), c.Request().Host) {
 				return true
 			}
 
