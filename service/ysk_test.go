@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/IceWhaleTech/CasaOS-MessageBus/pkg/ysk"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/repository"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/service"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/utils"
+	"github.com/inkly/CasaOS-MessageBus/pkg/ysk"
+	"github.com/inkly/CasaOS-MessageBus/repository"
+	"github.com/inkly/CasaOS-MessageBus/service"
+	"github.com/inkly/CasaOS-MessageBus/utils"
 	"gotest.tools/assert"
 )
 

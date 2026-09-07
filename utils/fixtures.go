@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"github.com/IceWhaleTech/CasaOS-MessageBus/pkg/ysk"
+	"github.com/inkly/CasaOS-MessageBus/pkg/ysk"
 )
 
 var (

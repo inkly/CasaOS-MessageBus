@@ -7,9 +7,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/repository"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/service"
+	"github.com/inkly/CasaOS-MessageBus/model"
+	"github.com/inkly/CasaOS-MessageBus/repository"
+	"github.com/inkly/CasaOS-MessageBus/service"
 	jsoniter "github.com/json-iterator/go"
 	"github.com/labstack/echo/v4"
 	"go.uber.org/goleak"
@@ -22,6 +22,7 @@ func TestEventRoute(t *testing.T) {
 	defer goleak.VerifyNone(
 		t,
 		goleak.IgnoreTopFunction("github.com/CorrectRoadH/go-socket.io/engineio.(*Server).Accept"), // there is a goroutine leak in go-socket.io
+		goleak.IgnoreCurrent(), // CasaOS-Common/external pulls in ecache, whose package init starts a permanent ticker
 	)
 
 	sourceID := "Foo"

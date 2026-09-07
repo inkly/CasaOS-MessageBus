@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/IceWhaleTech/CasaOS-Common/utils/logger"
+	"github.com/inkly/CasaOS-Common/utils/logger"
 
-	"github.com/IceWhaleTech/CasaOS-MessageBus/common"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
+	"github.com/inkly/CasaOS-MessageBus/common"
+	"github.com/inkly/CasaOS-MessageBus/model"
 	"go.uber.org/zap"
 )
 

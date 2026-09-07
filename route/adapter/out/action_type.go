@@ -1,8 +1,8 @@
 package out
 
 import (
-	"github.com/IceWhaleTech/CasaOS-MessageBus/codegen"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
+	"github.com/inkly/CasaOS-MessageBus/codegen"
+	"github.com/inkly/CasaOS-MessageBus/model"
 )
 
 func ActionTypeAdapter(actionType model.ActionType) codegen.ActionType {

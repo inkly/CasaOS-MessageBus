@@ -1,7 +1,7 @@
 package common
 
 import (
-	"github.com/IceWhaleTech/CasaOS-MessageBus/codegen"
+	"github.com/inkly/CasaOS-MessageBus/codegen"
 	"github.com/samber/lo"
 )
 
