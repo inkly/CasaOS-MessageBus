@@ -5,6 +5,8 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/gobwas/ws"
+	"github.com/gobwas/ws/wsutil"
 	"github.com/inkly/CasaOS-Common/utils"
 	"github.com/inkly/CasaOS-Common/utils/logger"
 	"github.com/inkly/CasaOS-MessageBus/codegen"
@@ -12,8 +14,6 @@ import (
 	"github.com/inkly/CasaOS-MessageBus/model"
 	"github.com/inkly/CasaOS-MessageBus/route/adapter/in"
 	"github.com/inkly/CasaOS-MessageBus/route/adapter/out"
-	"github.com/gobwas/ws"
-	"github.com/gobwas/ws/wsutil"
 	"github.com/labstack/echo/v4"
 	"go.uber.org/zap"
 )

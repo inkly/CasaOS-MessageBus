@@ -15,6 +15,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/coreos/go-systemd/daemon"
 	"github.com/inkly/CasaOS-Common/external"
 	"github.com/inkly/CasaOS-Common/model"
 	"github.com/inkly/CasaOS-Common/utils/file"
@@ -26,7 +27,6 @@ import (
 	"github.com/inkly/CasaOS-MessageBus/repository"
 	"github.com/inkly/CasaOS-MessageBus/route"
 	"github.com/inkly/CasaOS-MessageBus/service"
-	"github.com/coreos/go-systemd/daemon"
 	"go.uber.org/zap"
 )
 
