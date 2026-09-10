@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/inkly/CasaOS-MessageBus/repository"
+	"github.com/ReCasaOS/CasaOS-MessageBus/repository"
 )
 
 type Services struct {

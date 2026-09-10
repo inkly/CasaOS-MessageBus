@@ -51,7 +51,7 @@ What a release contains, and how it is built, is described in [CasaOS-Install](h
 
 **The access log no longer records host-side event publishes.** casaos's 5-second telemetry produced one JSON access-log line per publish, which systemd hands to journald: about 17 000 lines a day that buried every real request. The telemetry rate is unchanged — it is the dashboard's only realtime feed — and the log line is skipped instead. The skip is narrow: POST on the event publish route, and only from the unix socket or a loopback peer. Websocket subscribes, event-type registrations, actions and anything from the LAN stay logged ([CasaOS #2211](https://github.com/IceWhaleTech/CasaOS/issues/2211)).
 
-**The Go module is now `github.com/inkly/CasaOS-MessageBus`, built against `github.com/inkly/CasaOS-Common`,** so log lines, stack traces and `go version -m` on the shipped binary name the fork that ships them rather than upstream.
+**The Go module is now `github.com/ReCasaOS/CasaOS-MessageBus`, built against `github.com/ReCasaOS/CasaOS-Common`,** so log lines, stack traces and `go version -m` on the shipped binary name the fork that ships them rather than upstream.
 
 Packaging changed too, without touching the service: the release workflow builds and publishes the tarballs here instead of calling upstream's pipeline, which needed credentials this fork does not have and so never produced a release.
 

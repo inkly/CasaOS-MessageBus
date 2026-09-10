@@ -3,9 +3,9 @@ package out
 import (
 	"time"
 
-	"github.com/inkly/CasaOS-Common/utils"
-	"github.com/inkly/CasaOS-MessageBus/codegen"
-	"github.com/inkly/CasaOS-MessageBus/model"
+	"github.com/ReCasaOS/CasaOS-Common/utils"
+	"github.com/ReCasaOS/CasaOS-MessageBus/codegen"
+	"github.com/ReCasaOS/CasaOS-MessageBus/model"
 )
 
 func EventAdapter(event model.Event) codegen.Event {

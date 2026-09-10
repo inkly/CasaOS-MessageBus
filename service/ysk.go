@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/inkly/CasaOS-Common/utils/logger"
-	"github.com/inkly/CasaOS-MessageBus/common"
-	"github.com/inkly/CasaOS-MessageBus/model"
-	"github.com/inkly/CasaOS-MessageBus/pkg/ysk"
-	"github.com/inkly/CasaOS-MessageBus/repository"
-	"github.com/inkly/CasaOS-MessageBus/utils"
+	"github.com/ReCasaOS/CasaOS-Common/utils/logger"
+	"github.com/ReCasaOS/CasaOS-MessageBus/common"
+	"github.com/ReCasaOS/CasaOS-MessageBus/model"
+	"github.com/ReCasaOS/CasaOS-MessageBus/pkg/ysk"
+	"github.com/ReCasaOS/CasaOS-MessageBus/repository"
+	"github.com/ReCasaOS/CasaOS-MessageBus/utils"
 	"go.uber.org/zap"
 )
 

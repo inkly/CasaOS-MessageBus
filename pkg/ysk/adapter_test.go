@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/inkly/CasaOS-MessageBus/codegen"
-	"github.com/inkly/CasaOS-MessageBus/pkg/ysk"
+	"github.com/ReCasaOS/CasaOS-MessageBus/codegen"
+	"github.com/ReCasaOS/CasaOS-MessageBus/pkg/ysk"
 	"gotest.tools/assert"
 )
 

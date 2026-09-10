@@ -1,8 +1,8 @@
 package out
 
 import (
-	"github.com/inkly/CasaOS-MessageBus/codegen"
-	"github.com/inkly/CasaOS-MessageBus/model"
+	"github.com/ReCasaOS/CasaOS-MessageBus/codegen"
+	"github.com/ReCasaOS/CasaOS-MessageBus/model"
 )
 
 func EventTypeAdapter(eventType model.EventType) codegen.EventType {

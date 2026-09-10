@@ -1,12 +1,12 @@
-module github.com/inkly/CasaOS-MessageBus
+module github.com/ReCasaOS/CasaOS-MessageBus
 
 go 1.21
 
 require (
 	github.com/CorrectRoadH/go-socket.io v1.8.0-rc.5
+	github.com/ReCasaOS/CasaOS-Common v0.4.23
 	github.com/glebarez/sqlite v1.7.0
 	github.com/gobwas/ws v1.1.0
-	github.com/inkly/CasaOS-Common v0.4.22
 	github.com/json-iterator/go v1.1.12
 	github.com/samber/lo v1.46.0
 	go.uber.org/goleak v1.2.1

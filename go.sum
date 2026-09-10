@@ -1,6 +1,8 @@
 github.com/CorrectRoadH/go-socket.io v1.8.0-rc.5 h1:cjlXtmuOug5168+XRM+7iJxbd9lLkL9AgzemF7ZqoPI=
 github.com/CorrectRoadH/go-socket.io v1.8.0-rc.5/go.mod h1:DgupkgFQg7/js8Tr1uLYICJRGlHmKWIV6hWWTH2V2fc=
 github.com/RaveNoX/go-jsoncommentstrip v1.0.0/go.mod h1:78ihd09MekBnJnxpICcwzCMzGrKSKYe4AqU6PDYYpjk=
+github.com/ReCasaOS/CasaOS-Common v0.4.23 h1:UhoFpg2mWkCOEefETETmtRga1KfDErqYnRUHps6eR2M=
+github.com/ReCasaOS/CasaOS-Common v0.4.23/go.mod h1:0B3ukaWFZnO1n17QZx838MuTwxwxdHegJEJvJydADJs=
 github.com/andybalholm/brotli v1.0.1/go.mod h1:loMXtMfwqflxFJPmdbJO0a3KNoPuLBgiu3qAvBg8x/Y=
 github.com/andybalholm/brotli v1.0.5 h1:8uQZIdzKmjc/iuPu7O2ioW48L81FgatrcpfFmiq/cCs=
 github.com/andybalholm/brotli v1.0.5/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
@@ -99,8 +101,6 @@ github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB7
 github.com/gorilla/websocket v1.5.0 h1:PPwGk2jz7EePpoHN/+ClbZu8SPxiqlu12wZP/3sWmnc=
 github.com/gorilla/websocket v1.5.0/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
 github.com/hpcloud/tail v1.0.0/go.mod h1:ab1qPbhIpdTxEkNHXyeSf5vhxWSCs/tWer42PpOxQnU=
-github.com/inkly/CasaOS-Common v0.4.22 h1:uyNZrHELRznNHotr5S7FGZrv2OdbtiEbFrJSjqxA1F4=
-github.com/inkly/CasaOS-Common v0.4.22/go.mod h1:sQ6BywHKpH/3eDWNJMll4okLOyvnKL9apWM1Ym+ws/A=
 github.com/invopop/yaml v0.1.0/go.mod h1:2XuRLgs/ouIrW3XNzuNj7J3Nvu/Dig5MXvbCEdiBN3Q=
 github.com/invopop/yaml v0.2.0 h1:7zky/qH+O0DwAyoobXUqvVBwgBFRxKoQ/3FjcVpjTMY=
 github.com/invopop/yaml v0.2.0/go.mod h1:2XuRLgs/ouIrW3XNzuNj7J3Nvu/Dig5MXvbCEdiBN3Q=

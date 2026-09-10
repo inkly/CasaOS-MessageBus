@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/inkly/CasaOS-MessageBus/model"
-	"github.com/inkly/CasaOS-MessageBus/repository"
+	"github.com/ReCasaOS/CasaOS-MessageBus/model"
+	"github.com/ReCasaOS/CasaOS-MessageBus/repository"
 	"go.uber.org/goleak"
 	"gotest.tools/assert"
 )

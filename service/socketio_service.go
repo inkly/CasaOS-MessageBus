@@ -9,8 +9,8 @@ import (
 	"github.com/CorrectRoadH/go-socket.io/engineio/transport"
 	"github.com/CorrectRoadH/go-socket.io/engineio/transport/polling"
 	"github.com/CorrectRoadH/go-socket.io/engineio/transport/websocket"
-	"github.com/inkly/CasaOS-Common/utils/logger"
-	"github.com/inkly/CasaOS-MessageBus/model"
+	"github.com/ReCasaOS/CasaOS-Common/utils/logger"
+	"github.com/ReCasaOS/CasaOS-MessageBus/model"
 	"go.uber.org/zap"
 )
 

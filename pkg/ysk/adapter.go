@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/inkly/CasaOS-MessageBus/codegen"
+	"github.com/ReCasaOS/CasaOS-MessageBus/codegen"
 )
 
 type (

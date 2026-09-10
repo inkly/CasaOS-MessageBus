@@ -1,8 +1,8 @@
 package route
 
 import (
-	"github.com/inkly/CasaOS-MessageBus/codegen"
-	"github.com/inkly/CasaOS-MessageBus/service"
+	"github.com/ReCasaOS/CasaOS-MessageBus/codegen"
+	"github.com/ReCasaOS/CasaOS-MessageBus/service"
 	jsoniter "github.com/json-iterator/go"
 )
 

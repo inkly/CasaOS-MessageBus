@@ -3,8 +3,8 @@ package service
 import (
 	"errors"
 
-	"github.com/inkly/CasaOS-MessageBus/model"
-	"github.com/inkly/CasaOS-MessageBus/repository"
+	"github.com/ReCasaOS/CasaOS-MessageBus/model"
+	"github.com/ReCasaOS/CasaOS-MessageBus/repository"
 )
 
 type EventTypeService struct {

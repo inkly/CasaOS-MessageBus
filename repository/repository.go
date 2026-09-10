@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/inkly/CasaOS-MessageBus/model"
-	"github.com/inkly/CasaOS-MessageBus/pkg/ysk"
+	"github.com/ReCasaOS/CasaOS-MessageBus/model"
+	"github.com/ReCasaOS/CasaOS-MessageBus/pkg/ysk"
 )
 
 type Repository interface {

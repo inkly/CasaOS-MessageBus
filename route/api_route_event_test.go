@@ -7,9 +7,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/inkly/CasaOS-MessageBus/model"
-	"github.com/inkly/CasaOS-MessageBus/repository"
-	"github.com/inkly/CasaOS-MessageBus/service"
+	"github.com/ReCasaOS/CasaOS-MessageBus/model"
+	"github.com/ReCasaOS/CasaOS-MessageBus/repository"
+	"github.com/ReCasaOS/CasaOS-MessageBus/service"
 	jsoniter "github.com/json-iterator/go"
 	"github.com/labstack/echo/v4"
 	"go.uber.org/goleak"

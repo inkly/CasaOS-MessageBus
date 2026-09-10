@@ -5,9 +5,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/inkly/CasaOS-Common/utils/constants"
-	"github.com/inkly/CasaOS-MessageBus/common"
-	"github.com/inkly/CasaOS-MessageBus/model"
+	"github.com/ReCasaOS/CasaOS-Common/utils/constants"
+	"github.com/ReCasaOS/CasaOS-MessageBus/common"
+	"github.com/ReCasaOS/CasaOS-MessageBus/model"
 	"gopkg.in/ini.v1"
 )
 

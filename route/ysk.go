@@ -3,8 +3,8 @@ package route
 import (
 	"net/http"
 
-	"github.com/inkly/CasaOS-MessageBus/codegen"
-	"github.com/inkly/CasaOS-MessageBus/pkg/ysk"
+	"github.com/ReCasaOS/CasaOS-MessageBus/codegen"
+	"github.com/ReCasaOS/CasaOS-MessageBus/pkg/ysk"
 	"github.com/labstack/echo/v4"
 	"github.com/samber/lo"
 )
