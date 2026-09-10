@@ -1,5 +1,5 @@
 {
-  "name": "@icewhale/casaos-messagebus-openapi",
+  "name": "casaos-messagebus-openapi",
   "version": "0.0.1",
   "scripts": {
     "build": "rm -rf dist && tsc && rm -rf generate",
@@ -8,7 +8,7 @@
     "generate:ts": "npx openapi-typescript-codegen --input ./api/message_bus/openapi.yaml --output ./generate",
     "start": "yarn generate:local && yarn build"
   },
-  "homepage": "https://github.com/IceWhaleTech/CasaOS-MessageBus#readme",
+  "homepage": "https://github.com/ReCasaOS/CasaOS-MessageBus#readme",
   "description": "Casaos-MessageBus Typescript+Axios SDK",
   "keywords": [
     "CasaOS-MessageBus",
