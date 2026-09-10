@@ -1,8 +1,8 @@
 # CasaOS-MessageBus
 
-> **Not affiliated with IceWhale.** An independent, community-maintained distribution of CasaOS, not produced or endorsed by Shanghai IceWhale Technology Limited. CASAOS is their trademark, used here only to say what this is a release of. The original project is [IceWhaleTech/CasaOS](https://github.com/IceWhaleTech/CasaOS); report problems with this distribution at [inkly/CasaOS/issues](https://github.com/ReCasaOS/CasaOS/issues).
+> **Not affiliated with IceWhale.** An independent, community-maintained distribution of CasaOS, not produced or endorsed by Shanghai IceWhale Technology Limited. CASAOS is their trademark, used here only to say what this is a release of. The original project is [IceWhaleTech/CasaOS](https://github.com/IceWhaleTech/CasaOS); report problems with this distribution at [ReCasaOS/CasaOS/issues](https://github.com/ReCasaOS/CasaOS/issues).
 
-The message bus of the **inkly distribution of CasaOS**, a maintained release of the project after upstream [IceWhaleTech/CasaOS](https://github.com/IceWhaleTech/CasaOS) stopped shipping in 2025. This repository descends from IceWhale's through [alvins82's fork](https://github.com/alvins82/CasaOS-MessageBus), whose one commit here fixed the setup script's fallback on Ubuntu 26.
+The message bus of **ReCasaOS**, a maintained release of the project after upstream [IceWhaleTech/CasaOS](https://github.com/IceWhaleTech/CasaOS) stopped shipping in 2025. This repository descends from IceWhale's through [alvins82's fork](https://github.com/alvins82/CasaOS-MessageBus), whose one commit here fixed the setup script's fallback on Ubuntu 26.
 
 CasaOS services do not call each other to report what happened. They publish it here once, and whoever is listening hears it.
 
